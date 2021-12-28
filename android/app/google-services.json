@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "826044798949",
+    "project_id": "cryptoassist-2a809",
+    "storage_bucket": "cryptoassist-2a809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826044798949:android:41028d60f4de4cbc28010c",
+        "android_client_info": {
+          "package_name": "com.example.cryptoassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826044798949-n768elr14ubsv3vu8l8u3pvgvlkrvpnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAacvESOqdt-6vtAfssi6t3r1eYqaarTqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826044798949-n768elr14ubsv3vu8l8u3pvgvlkrvpnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
