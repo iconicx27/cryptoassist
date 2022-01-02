@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:cryptoassist/pages/market_page.dart';
+import 'package:cryptoassist/pages/home.dart';
 import 'package:cryptoassist/pages/signup_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
