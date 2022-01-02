@@ -12,7 +12,7 @@ class MarketProvider extends ChangeNotifier {
     fetchData();
   }
 
-  void fetchData() async {
+  Future<void> fetchData() async {
     List<dynamic> _markets = await API.getMarkets();
 
     List<CryptoCurrency> temp = [];
@@ -24,10 +24,17 @@ class MarketProvider extends ChangeNotifier {
     markets = temp;
     isLoading = false;
     notifyListeners();
+    print("data updated");
 
-    Timer(const Duration(seconds: 3), () {
-      fetchData();
-      print("data updated");
-    });
+    // Timer(const Duration(seconds: 10), () {
+    //   fetchData();
+    //   print("data updated");
+    // });
+  }
+
+  CryptoCurrency fetchCryptoById(String id) {
+    CryptoCurrency crypto =
+        markets.where((element) => element.id == id).toList()[0];
+    return crypto;
   }
 }
