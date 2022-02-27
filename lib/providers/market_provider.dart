@@ -1,7 +1,9 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cryptoassist/methods/fetch_API_data.dart';
 import 'package:cryptoassist/models/cryptocurrency.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 
 class MarketProvider extends ChangeNotifier {

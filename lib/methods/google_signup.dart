@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_print
 
+import 'package:cryptoassist/methods/firebase_database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -26,6 +27,7 @@ class GoogleSignInProvider extends ChangeNotifier {
       );
 
       await FirebaseAuth.instance.signInWithCredential(credential);
+      database().addUserInfo();
     } catch (e) {
       print(e.toString());
     }
